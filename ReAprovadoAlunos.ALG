@@ -1,5 +1,6 @@
 algoritmo "ReAprovadoAlunos"
-// rotina para declarar se um aluno, baseado na média de suas notas, está aprovado ou reprovado na disciplina.
+// autor: Luiz Nison Filler
+// rotina para declarar se um aluno, baseado na média de suas notas, está aprovado ou reprovado na disciplina e classificar o aproveitamento deste aluno
 
 var
    N1, N2, media: real
