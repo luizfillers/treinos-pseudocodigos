@@ -1,5 +1,5 @@
 algoritmo "ReAprovadoAlunos"
-// rotina para declarar se um aluno, baseado na mÈdia de suas notas, est· aprovado ou reprovado na disciplina.
+// rotina para declarar se um aluno, baseado na m√©dia de suas notas, est√° aprovado ou reprovado na disciplina.
 
 var
    N1, N2, media: real
@@ -14,13 +14,35 @@ inicio
    Leia (N2)
    media <- (N1+N2)/2
    Se (media >=7) Entao
-      Escreval ("A mÈdia das duas notas do(a) ", nome_aluno, " È: ", media, ". Portanto, est· APROVADO(A).")
+      Escreval ("A m√©dia das duas notas do(a) ", nome_aluno, " √©: ", media, ". Portanto, est√° APROVADO(A).")
    Senao
       Se (media >=5) e (media <7) Entao
-         Escreval ("A mÈdia das duas notas do(a) ", nome_aluno, " È: ", media, ". Portanto, est· de RECUPERA«√O.")
+         Escreval ("A m√©dia das duas notas do(a) ", nome_aluno, " √©: ", media, ". Portanto, est√° de RECUPERA√á√ÉO.")
       Senao
-         Escreval ("A mÈdia das duas notas do(a) ", nome_aluno, " È: ", media, ". Portanto, est· REPROVADO(A).")
+         Escreval ("A m√©dia das duas notas do(a) ", nome_aluno, " √©: ", media, ". Portanto, est√° REPROVADO(A).")
       FimSe
    FimSe
+   Se (media <5) Entao
+      Escreval ("E o aproveitamento do(a) ", nome_aluno, " √© classificado pela nota F.")
+   senao
+      Se (media >5) e (media <5.9) Entao
+         Escreval ("E o aproveitamento do(a) ", nome_aluno, " √© classificado pela nota E.")
+      senao
+         Se (media >5.9) e (media <6.9) Entao
+            Escreval ("E o aproveitamento do(a) ", nome_aluno, " √© classificado pela nota D.")
+         senao
+            Se (media >6.9) e (media <7.9) Entao
+               Escreval ("E o aproveitamento do(a) ", nome_aluno, " √© classificado pela nota C.")
+            senao
+               Se (media >7.9) e (media <8.9) Entao
+                  Escreval ("E o aproveitamento do(a) ", nome_aluno, " √© classificado pela nota B.")
+               senao
+                  Escreval ("E o aproveitamento do(a) ", nome_aluno, " √© classificado pela nota A.")
+              FimSe
+           FimSe
+        FimSe
+     FimSe
+   Fimse
+   Escreval ("Muito obrigado. E volte sempre!")
    
 fimalgoritmo
