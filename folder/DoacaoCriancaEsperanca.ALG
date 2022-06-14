@@ -1,21 +1,21 @@
 algoritmo "DoacaoCriancaEsperanca"
 // autor: Luiz Nison Filler
-// rotina de doações para Criança Esperança.
-// nota_autor: foram utilizadas estruturas de seleção (condicionais) múltiplas, utilizando os recursos "Faça Caso" e "Escolha".
+// rotina de doaÃ§Ãµes para CrianÃ§a EsperanÃ§a.
+// nota_autor: foram utilizadas estruturas de seleÃ§Ã£o (condicionais) mÃºltiplas, utilizando os recursos "FaÃ§a Caso" e "Escolha".
 var
    doacao: inteiro
    valor: real
 
 inicio
    Escreval ("-------------------------------------------")
-   Escreval ("Bem vindo(a) ao Criança Esperança.")
+   Escreval ("Bem vindo(a) ao CrianÃ§a EsperanÃ§a.")
    Escreval ("-------------------------------------------")
-   Escreval ("Digite um dos valores abaixo para efetuar uma doação.")
+   Escreval ("Digite um dos valores abaixo para efetuar uma doaÃ§Ã£o.")
    Escreval ("[1] - para doar R$10,00")
    Escreval ("[2] - para doar R$25,00")
    Escreval ("[3] - para doar R$50,00")
    Escreval ("[4] - para doar outros valores")
-   Escreval ("[5] - para cancelar doação")
+   Escreval ("[5] - para cancelar doaÃ§Ã£o")
    Leia (doacao)
    Escolha (doacao)
    Caso 1
@@ -25,13 +25,13 @@ inicio
    Caso 3
       valor <-50
    Caso 4
-      Escreva ("Qual o valor da doação? R$ ")
+      Escreva ("Qual o valor da doaÃ§Ã£o? R$ ")
       Leia (valor)
    Caso 5
       valor <-0
    FimEscolha
    Escreval ("-------------------------------------------")
-   Escreval ("Sua doação de R$", valor, " foi efetivada.")
+   Escreval ("Sua doaÃ§Ã£o de R$", valor, " foi efetivada.")
    Escreval ("Muito obrigado!")
    Escreval ("-------------------------------------------")
 
