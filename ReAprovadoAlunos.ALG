@@ -4,7 +4,7 @@ algoritmo "ReAprovadoAlunos"
 
 var
    N1, N2, media: real
-   nome_aluno: caractere
+   nome_aluno, aproveitamento: caractere
 
 inicio
    Escreval ("Digite o nome do aluno a ser avaliado?")
