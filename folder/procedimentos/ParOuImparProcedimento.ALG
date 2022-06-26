@@ -1,7 +1,8 @@
 algoritmo "ParOuImparProcedimento"
 //autor: Luiz Nison Filler
-//disciplina: Algoritmos - Curso em Vídeo
-//rotina para verificar se um número é par ou impar utilizando procedimentos com passagem de parâmetros por valores.
+//disciplina: Algoritmos - Curso em VÃ­deo
+//rotina para verificar se um nÃºmero Ã© par ou impar utilizando procedimentos com passagem de parÃ¢metros por valores.
+
 var
    N: inteiro
    resp: caractere
@@ -9,19 +10,19 @@ var
 Procedimento ParOuImpar(V: inteiro)
 inicio
    Se (V % 2 =0) entao
-      Escreval ("O número ", N, " é PAR.")
+      Escreval ("O nÃºmero ", N, " Ã© PAR.")
    senao
-      Escreval ("O número ", N, " é IMPAR.")
+      Escreval ("O nÃºmero ", N, " Ã© IMPAR.")
    FimSe
 fimprocedimento
 
 inicio
 Repita
    LimpaTela
-   Escreva ("Digite um número: ")
+   Escreva ("Digite um nÃºmero: ")
    Leia (N)
    ParOuImpar(N)
    Escreva ("Deseja continuar? [S/N] ")
    Leia (resp)
-Até (resp = "N")
+AtÃ© (resp = "N")
 fimalgoritmo
