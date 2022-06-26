@@ -1,7 +1,7 @@
 algoritmo "SomaParametroReferencia"
 // autor: Luiz Nison Filler
-// disciplina: Algoritmos - Curso em Vídeo
-// rotina para soma de dois números utilizando procedimento com passagem de parâmetro por referência.
+// disciplina: Algoritmos - Curso em VÃ­deo
+// rotina para soma de dois nÃºmeros utilizando procedimento com passagem de parÃ¢metro por referÃªncia.
 
 var
    X, Y: inteiro
