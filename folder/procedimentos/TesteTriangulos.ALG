@@ -61,7 +61,8 @@ Inicio
          Leia (L2)
          Escreva ("Digite a medida do terceiro lado. ")
          Leia (L3)
-         Se (L1>(L2+L3)) E (L2>(L1+L3)) E (L3>(L1+L2)) entao
+         Se (L1>(L2+L3)) OU (L2>(L1+L3)) OU (L3>(L1+L2)) OU ((L1 = L2) E (L2 = L3))  entao
+            // POSSIBILIDADE DE SUBSTITUIR OS LADOS POR (CATETO OPOSTO, CATETO ADJACENTE, HIPOTENUSA)
             Escreval ("Parabéns! O primeiro elemento necessário para uma figura ser considerada um triângulo foi contemplado.")
             Escreval ("Agora, nos atentaremos no resultado da soma dos ângulos externos.")
             Escreva ("Você possui as medidas dos ângulos externos? [S/N] ")
@@ -126,14 +127,19 @@ Inicio
    Leia (Ai2)
    Escreva ("Digite o terceiro ângulo. ")
    Leia (Ai3)
-   Se (Ai1 < 90) E (Ai2 < 90) E (Ai3 < 90) entao
-      Escreval ("O triângulo é OCUTÂNGULO, pois seus três ângulos internos são agudos, ou seja, menores que 90º.")
+   Se (Ai1 + Ai2 + Ai3 <> 180) entao
+      Escreval ("Poxa vida! A sua figura NÃO pode ser considerada um triângulo.")
+      Escreval ("Muito obrigado e volte sempre!")
    senao
-      Se ((Ai1 = 90) E (Ai2 < 90) E (Ai3 < 90)) OU ((Ai1 < 90) E (Ai2 = 90) E (Ai3 < 90)) OU ((Ai1 < 90) E (Ai2 < 90) E (Ai3 = 90)) entao
-         Escreval ("O triângulo é RETÂNGULO, pois um de seus ângulos é reto, ou seja, possui 90º e os outros dois ângulos são agudos, ou seja, menores que 90º.")
+      Se (Ai1 < 90) E (Ai2 < 90) E (Ai3 < 90) entao
+         Escreval ("O triângulo é OCUTÂNGULO, pois seus três ângulos internos são agudos, ou seja, menores que 90º.")
       senao
-         Se ((Ai1 > 90) E (Ai2 < 90) E (Ai3 < 90)) OU ((Ai1 < 90) E (Ai2 > 90) E (Ai3 < 90)) OU ((Ai1 < 90) E (Ai2 < 90) E (Ai3 > 90)) entao
-            Escreval ("O triângulo é OBTUSÂNGULO, pois um de seus ângulos é obtuso, ou seja, maior que 90º e os outros dois ângulos são agudos, ou seja, menores que 90º.")
+         Se ((Ai1 = 90) E (Ai2 < 90) E (Ai3 < 90)) OU ((Ai1 < 90) E (Ai2 = 90) E (Ai3 < 90)) OU ((Ai1 < 90) E (Ai2 < 90) E (Ai3 = 90)) entao
+            Escreval ("O triângulo é RETÂNGULO, pois um de seus ângulos é reto, ou seja, possui 90º e os outros dois ângulos são agudos, ou seja, menores que 90º.")
+         senao
+            Se ((Ai1 > 90) E (Ai2 < 90) E (Ai3 < 90)) OU ((Ai1 < 90) E (Ai2 > 90) E (Ai3 < 90)) OU ((Ai1 < 90) E (Ai2 < 90) E (Ai3 > 90)) entao
+               Escreval ("O triângulo é OBTUSÂNGULO, pois um de seus ângulos é obtuso, ou seja, maior que 90º e os outros dois ângulos são agudos, ou seja, menores que 90º.")
+            FimSe
          FimSe
       FimSe
    FimSe
@@ -214,7 +220,7 @@ inicio
    Escreval ("Eu te ajudarei a conhecer mais sobre o mundo dos triângulos.")
    TabelaEtapa()
    VerificaTri()
-   Se (Qls = 3)  E (L1>(L2+L3)) E (L2>(L1+L3)) E (L3>(L1+L2)) E (TotAe = 360) E (TotAi = 180) entao
+   Se (Qls = 3) E (L1>(L2+L3)) OU (L2>(L1+L3)) OU (L3>(L1+L2)) OU ((L1 = L2) E (L2 = L3)) E (TotAe = 360) E (TotAi = 180) entao
       ClassiAnguloTri()
       ClassiLadoTri()
       AreaTriangulo()
