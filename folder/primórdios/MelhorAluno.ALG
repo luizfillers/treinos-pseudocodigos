@@ -1,6 +1,6 @@
 algoritmo "MelhorAluno"
 // autor: Luiz Nison Filler
-// disciplina: Algoritmos - Curso em Vídeo
+// disciplina: Algoritmos - Curso em VÃ­deo
 // rotina para verificar qual foi o aluno com o melhor aproveitamento de uma turma
 var
    Nt, cont: inteiro
@@ -9,9 +9,9 @@ var
 
 inicio
    Escreval ("-----------------------")
-   Escreval ("Escola Santa Paciência")
+   Escreval ("Escola Santa PaciÃªncia")
    Escreval ("-----------------------")
-   Escreva ("Quantos alunos há na turma? ")
+   Escreva ("Quantos alunos hÃ¡ na turma? ")
    Leia (Nt)
    cont <- 1
    Enquanto (cont <= Nt) faca
