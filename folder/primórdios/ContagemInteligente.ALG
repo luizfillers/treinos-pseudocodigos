@@ -1,7 +1,7 @@
 algoritmo "ContagemInteligente"
 // autor: Luiz Nison Filler
-// disciplina: Algoritmos - Curso em Vídeo
-// rotina para realizar a contagem progressiva ou regressiva entre dois números
+// disciplina: Algoritmos - Curso em VÃ­deo
+// rotina para realizar a contagem progressiva ou regressiva entre dois nÃºmeros
 
 var
    I, F, cont: inteiro
@@ -10,9 +10,9 @@ inicio
    Escreval ("--------------------")
    Escreval ("CONTAGEM INTELIGENTE")
    Escreval ("--------------------")
-   Escreva ("Digite o número inicial para a contagem. ")
+   Escreva ("Digite o nÃºmero inicial para a contagem. ")
    Leia (I)
-   Escreva ("Digite o número final para a contagem. ")
+   Escreva ("Digite o nÃºmero final para a contagem. ")
    Leia (F)
    Escreval("--------------------")
    Escreval ("CONTANDO")
