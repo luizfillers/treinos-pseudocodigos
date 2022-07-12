@@ -1,6 +1,6 @@
 algoritmo "SuperContador"
 // autor: Luiz Nison Filler
-// disciplina: Algoritmos - Curso em Vídeo
+// disciplina: Algoritmos - Curso em VÃ­deo
 // rotina para fazer contagens progressivas ou regressivas
 
 var
@@ -12,7 +12,7 @@ inicio
       Escreval ("=====================")
       Escreval ("  |    M E N U    |  ")
       Escreval ("=====================")
-      Escreval ("Digite o número dentre as opções abaixo: ")
+      Escreval ("Digite o nÃºmero dentre as opÃ§Ãµes abaixo: ")
       Escreval ("  | [1] De 1 a 10 |")
       Escreval ("  | [2] De 10 a 1 |")
       Escreval ("  | [3] Sair      |")
@@ -34,7 +34,7 @@ inicio
          Escreval ("Saindo...")
       FimEscolha
       Se (R >= 4) Entao
-         Escreval ("Opção inválida!")
+         Escreval ("OpÃ§Ã£o invÃ¡lida!")
       FimSe
    Ate (R = 3)
 
