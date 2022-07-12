@@ -1,7 +1,7 @@
 algoritmo "NumerosPrimos"
 // autor: Luiz Nison Filler
-// disciplina: Algoritmos - Curso em Vídeo
-// rotina para contagem de números primos
+// disciplina: Algoritmos - Curso em VÃ­deo
+// rotina para contagem de nÃºmeros primos
 
 var
    C, N, ContDiv: inteiro
@@ -11,7 +11,7 @@ inicio
    Repita
       C <- 1
       ContDiv <- 0
-      Escreval ("Digite um número para sabermos se ele é primo.")
+      Escreval ("Digite um nÃºmero para sabermos se ele Ã© primo.")
       Leia (N)
       Repita
          Escreval (C)
@@ -20,16 +20,16 @@ inicio
          FimSe
          C <- C + 1
       Ate (C > N)
-      Escreval ("Ao todo, exitem ", ContDiv, " valores divisíveis.")
+      Escreval ("Ao todo, exitem ", ContDiv, " valores divisÃ­veis.")
       Se (ContDiv > 2) Entao
-         Escreval ("Portanto, ", N, " NÃO é um número primo.")
+         Escreval ("Portanto, ", N, " NÃƒO Ã© um nÃºmero primo.")
       Senao
-         Escreval ("Portanto, ", N, " é um número primo.")
+         Escreval ("Portanto, ", N, " Ã© um nÃºmero primo.")
       FimSe
-      Escreval ("Deseja verificar outro número? [S/N] ")
+      Escreval ("Deseja verificar outro nÃºmero? [S/N] ")
       Leia (resp)
       Se (resp = "S") Entao
-         Escreval ("Deseja limpar o histórico? [S/N] ")
+         Escreval ("Deseja limpar o histÃ³rico? [S/N] ")
          Leia (LimpH)
          Se (LimpH = "S") Entao
             LimpaTela
