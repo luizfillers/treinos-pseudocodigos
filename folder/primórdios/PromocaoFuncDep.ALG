@@ -1,7 +1,7 @@
 algoritmo "PromocaoFuncDep"
 // autor: Luiz Nison Filler
-// disciplina: Algoritmos - Curso em VÌdeo
-// rotina para verificar qual ser· o novo sal·rio que um funcion·rio receber· a depender da quantidade de dependentes que ele possui
+// disciplina: Algoritmos - Curso em V√≠deo
+// rotina para verificar qual ser√° o novo sal√°rio que um funcion√°rio receber√° a depender da quantidade de dependentes que ele possui
 
 var
    nome: caractere
@@ -9,9 +9,9 @@ var
    dep: inteiro
 
 inicio
-   Escreva ("Ol·! Qual o nome do funcion·rio que deseja pesquisar? ")
+   Escreva ("Ol√°! Qual o nome do funcion√°rio que deseja pesquisar? ")
    Leia (nome)
-   Escreva ("Digite o sal·rio do(a) funcion·rio(a) ", nome, ". R$")
+   Escreva ("Digite o sal√°rio do(a) funcion√°rio(a) ", nome, ". R$")
    Leia (sal)
    Escreva ("Digite a quantidade de dependentes que ", nome, " possui. ")
    Leia (dep)
@@ -25,6 +25,6 @@ inicio
    OutroCaso
       nsal <- sal + (sal*18/100)
    FimEscolha
-   Escreval ("Com a nova promoÁ„o, o sal·rio de ", nome, " ser· de R$", nsal:5:2)
+   Escreval ("Com a nova promo√ß√£o, o sal√°rio de ", nome, " ser√° de R$", nsal:5:2)
 
 fimalgoritmo
