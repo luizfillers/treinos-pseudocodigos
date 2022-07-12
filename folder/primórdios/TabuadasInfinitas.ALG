@@ -1,14 +1,14 @@
 algoritmo "TabuadasInfinitas"
 // autor: Luiz Nison Filler
-// disciplina: Algoritmos - Curso em Vídeo
-// rotina para calcular quantas tabuadas o usuário desejar
+// disciplina: Algoritmos - Curso em VÃ­deo
+// rotina para calcular quantas tabuadas o usuÃ¡rio desejar
 
 var
    cont, N, result: inteiro
    resp: caractere
 
 inicio
-   Escreva ("Digite o número para vermos a tabuada dele. ")
+   Escreva ("Digite o nÃºmero para vermos a tabuada dele. ")
    leia (N)
    cont <- 1
    Repita
@@ -19,7 +19,7 @@ inicio
    Escreva ("Deseja fazer outra tabuada? [S/N] ")
    Leia (resp)
    Enquanto (resp = "S") faca
-      Escreva ("Digite o número para vermos a tabuada dele. ")
+      Escreva ("Digite o nÃºmero para vermos a tabuada dele. ")
       leia (N)
       cont <- 1
       Repita
