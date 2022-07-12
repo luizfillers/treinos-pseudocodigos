@@ -1,14 +1,14 @@
 algoritmo "CalculoFatorial"
 // autor: Luiz Nison Filler
-// disciplina: Algoritmos - Curso em Vídeo
-// rotina para calcular o fatorial de números inseridos pelo usuário
+// disciplina: Algoritmos - Curso em VÃ­deo
+// rotina para calcular o fatorial de nÃºmeros inseridos pelo usuÃ¡rio
 
 var
    C, N, F: inteiro
    resp, LimpH: caractere
 inicio
    Repita
-      Escreva ("Digite o número para calcular seu fatorial. ")
+      Escreva ("Digite o nÃºmero para calcular seu fatorial. ")
       Leia (N)
       Escreva ("")
       C <- N
@@ -17,11 +17,11 @@ inicio
          F <- F*C
          C <- C - 1
       Ate (C < 1)
-      Escreval ("O valor do fatorial de ", N, " é igual à ", F)
+      Escreval ("O valor do fatorial de ", N, " Ã© igual Ã  ", F)
       Escreval ("Quer continuar a calcular fatoriais? [S/N]")
       Leia (resp)
       Se (resp = "S") Entao
-         Escreval ("Deseja limpar o histórico? [S/N] ")
+         Escreval ("Deseja limpar o histÃ³rico? [S/N] ")
          Leia (LimpH)
          Se (LimpH = "S") Entao
             LimpaTela
