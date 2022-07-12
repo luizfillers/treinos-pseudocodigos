@@ -1,7 +1,7 @@
 algoritmo "EscolhendoPessoas"
 // autor: Luiz Nison Filler
-// disciplina: Algoritmos - Curso em Vídeo
-// rotina para fazer a contagem de pessoas a depender de características prédeterminadas
+// disciplina: Algoritmos - Curso em VÃ­deo
+// rotina para fazer a contagem de pessoas a depender de caracterÃ­sticas prÃ©determinadas
 // H: >18anos E Castanho | M: >25 e <30anos E Loiras
 
 var
@@ -35,8 +35,8 @@ inicio
    EscrevaL("------------------------------------")
    EscrevaL(" RESULTADO FINAL ")
    EscrevaL("------------------------------------")
-   Escreval ("Total de homens com mais de 18 e cabelos castanhos é: ", H, ".")
-   Escreval ("Total de mulheres entre 25 e 30 e cabelos loiros é: ", M, ".")
+   Escreval ("Total de homens com mais de 18 e cabelos castanhos Ã©: ", H, ".")
+   Escreval ("Total de mulheres entre 25 e 30 e cabelos loiros Ã©: ", M, ".")
 
 
 fimalgoritmo
